@@ -50,7 +50,16 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+let employeeUpdater = () => {
+  for (var i = 0; i < employees.length; i++) {
+    if (employees[i].firstName === "Theo") {
+      employees.splice(i, 1)
+    } else if (employees[i].firstName === "Lorie") {
+      employees[i].department = 'HR'
+    }
+  }
+  return employees;
+}
 
 
 
@@ -68,7 +77,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+let removeDuplicates = () => {
+  for (var i = workplaceAccidents.length - 1; i >= 0; i--) {
+    for (var j = workplaceAccidents.length - 1; j >= 0; j--) {
+      if (workplaceAccidents[i] === workplaceAccidents[j] && i !== j) {
+        workplaceAccidents.splice(i, 1)
+      }
+    }
+  }
+  return workplaceAccidents;
+}
 
 
 
@@ -97,8 +115,17 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
+
+// let fluffysFriends = () => {
+//   for (var i = 0; i < cat.length; i++) {
+//     if (cats[i].catFriends.name === 'Grumpy') {
+//       grumpyActivity = cat.catFriends.activities[1];
+//     }
+//     return grumpyActivity;
+//   }
+// }
 
 
 
@@ -138,7 +165,12 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+// let recordCleaner = () => {
+//   for (var i = 0; i < myCar.length; i++) {
+//     for (var j = 0; j < myCar.)
+//   }
+  
+// }
 
 
 
@@ -157,6 +189,10 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+// let looper = (arr) => {
+//   for (var i = 0; i < arr.length; i++) {
+//     for (var j = 0; j < arr.length; j++)
+//   }
+// }
 
 

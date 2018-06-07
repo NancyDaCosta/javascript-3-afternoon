@@ -21,7 +21,7 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+let {color, make, model, year} = carDetails;
 
 
 
@@ -34,7 +34,7 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
+  let {firstName, lastName, title} = obj;
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -53,7 +53,10 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
+let totalPopulation = (obj) => {
+  let {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;
+} 
 
 
 
@@ -67,7 +70,15 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+let ingredients = (obj) => {
+  let {carb, fat, protein} = obj;
+  let arr = [];
+  arr.push(carb);
+  arr.push(fat);
+  arr.push(protein);
+
+  return arr;
+}
 
 
 
@@ -85,7 +96,15 @@ function greeting( obj ) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+function largeNumbers({first, second, third}) {
+  if (first < second && third) {
+    return first;
+  } else if (second < first && third) {
+    return second;
+  } else {
+    return third;
+  }
+}
 
 
 
@@ -97,6 +116,18 @@ function greeting( obj ) {
   Find the longest array and return that array.
 */
 
-//Code Here
+function numberGroups({a, b, c}) {
+  var a1 = a.length;
+  var b1 = b.length;
+  var c1 = c.length;
+
+  if (a1 > b1 && a1 > c1) {
+    return a;
+  } else if (b1 > a1 && b1 > c1) {
+    return b;
+  } else {
+    return c;
+  }
+}
 
 
